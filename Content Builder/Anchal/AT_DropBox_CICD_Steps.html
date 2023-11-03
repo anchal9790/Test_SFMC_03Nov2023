@@ -1,0 +1,10 @@
+<script runat="server">
+
+    Platform.Response.Write("The code for this output is getting fetched by dropbox directly <br><br>");
+    
+    Platform.Load("core","1");
+      Write("When we make changes in VS code file and refresh the landing page, it immediately gets reflected and<br> this is how you achieve it <br>");
+      
+      Platform.Response.Write("<b><b><br>1. Create a free dropbox account and download app<br>2. It will create a dropbox location on your local PC<br>3. Create a folder under that location<br>4. Save your code files in that location<br>5. Now, go to Visual Studio<br>6. Click>File>Open Folder>Select dropbox folder<br>7. You will see your folder is sync with VS now<br>8. Go to SFMC>Landing Pages<br>9. Insert this code - '%%=TreatAsContent(HTTPGet('https://dl.dropbox.com/scl/fi/cabshuo6fa80vffbnjkq7/SSJSWriteforOutput.html?rlkey=yn57xnr5zbczwm45lzha5p29z&dl=0'))=%%'<br>10. Notice this the URL is file link from Dropbox, you can go to the dropbox and copy the file link and replaced www>dl<br>11. Tada!! You will publish and you will see, the code which you edited in VS, synced with dropbox and then got called at SFMC<br>12. The best part of this whole solution is that you don't need to wait for code changes to reflect in SFMC cloudpages. You make some changes in VS and it immediately gets reflected in cloudpage as soon as you publish<br><br> Thank you for reading </b>")
+    
+    </script>
